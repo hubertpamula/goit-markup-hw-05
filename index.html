@@ -56,7 +56,17 @@
           <h1 class="main-header">
             EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
           </h1>
-          <input class="main-button" type="button" value="Zamów usługe" />
+          <input class="main-button" type="button" value="Zamów usługe" data-modal-open />
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-btn" data-modal-close><span>X</span></button>
+            <div class="modal-content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Illum, quo distinctio. Debitis obcaecati, odit quod consequuntur,
+               iusto ea dolore dignissimos neque itaque repudiandae quaerat ad nisi sint? Veniam,
+               totam voluptate, consectetur asperiores fugiat maiores molestias non nam vitae similique distinctio
+                delectus beatae nostrum dolore ipsa impedit accusamus tempore ad! Reiciendis.</p></div>
+          </div>
         </div>
       </section>
       <section>
@@ -374,25 +384,24 @@
     </main>
     <footer>
       <div class="container footer-footer">
-      <div>
-        <a class="footer-logo" href="#"><span class="blue">Web</span>Studio</a>
-        <address class="footer-address">
+        <div>
+          <a class="footer-logo" href="#"><span class="blue">Web</span>Studio</a>
+          <address class="footer-address">
           m. Warszawa, Aleje Jerozolimskie 21
-        </address>
-        <ul class="footer-list">
-          <li>
-            <a class="footer-contacts" href="mailto:info@example.com"
+          </address>
+          <ul class="footer-list">
+            <li>
+              <a class="footer-contacts" href="mailto:info@example.com"
               >info@example.com</a
             >
-          </li>
-          <li>
-            <a class="footer-contacts" href="tel:+48-111-111-111"
-              >+48 111 111 111</a
-            >
+            </li>
+            <li>
+              <a class="footer-contacts" href="tel:+48-111-111-111"
+              >+48 111 111 111</a>
           </li>
         </ul>
-      </div>
-        <div class="social-links-wrapper">
+        </div>
+          <div class="social-links-wrapper">
           <span class="social-header">Dołącz do nas</span>
           <ul class="social-links">
             <li class="icon-li">
@@ -426,6 +435,6 @@
           </ul>
         </div>
       </footer>
-      </div>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
